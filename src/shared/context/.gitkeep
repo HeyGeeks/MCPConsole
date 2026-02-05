@@ -1,0 +1,2 @@
+# Shared Context
+This directory contains global React context providers used across multiple features.
