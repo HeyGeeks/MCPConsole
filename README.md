@@ -107,15 +107,6 @@ npm start
 
 ## Configuration
 
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `NEXT_PUBLIC_APP_URL` | Application base URL (for OAuth redirects) | `http://localhost:9002` |
-| `FIREBASE_API_KEY` | Firebase API key (if using Firebase) | - |
-| `FIREBASE_AUTH_DOMAIN` | Firebase auth domain | - |
-| `FIREBASE_PROJECT_ID` | Firebase project ID | - |
-
 ### Adding AI Providers
 
 1. Navigate to **Settings > Providers**
@@ -154,7 +145,6 @@ MCPConsole implements a secure OAuth2 PKCE (Proof Key for Code Exchange) flow:
 4. **Callback**: Provider redirects to the callback URL with an authorization code
 5. **Token Exchange**: Code is exchanged for access and refresh tokens
 6. **Token Storage**: Tokens are stored in:
-   - Backend memory (for active connections)
    - localStorage (for persistence across reloads)
 7. **Auto-Close**: Popup window posts message to main window and closes automatically
 8. **Connection**: Server automatically connects using the access token
